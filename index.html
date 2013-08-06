@@ -105,6 +105,18 @@ div.addthis_toolbox {
   margin: 0 auto;
 }
 </style>
+<script type="text/javascript">
+// Legacy GA code needed to indicate tracking is indeed installed
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42981529-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
 <body>
 
@@ -314,18 +326,6 @@ div.addthis_toolbox {
 
   ga('create', 'UA-42981529-1', 'trailstarter.co');
   ga('send', 'pageview');
-
-
-  // Legacy GA code needed to indicate tracking is indeed installed
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-42981529-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
 </script>
 </body>
